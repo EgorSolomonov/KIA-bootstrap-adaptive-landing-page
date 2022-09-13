@@ -1,0 +1,778 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  font-style: normal;
+}
+
+/* VARIABLES */
+
+$headerBackground: #f7f7f7;
+$headerButton: #c7001f;
+$textColor: #333333;
+$buttonTextColor: white;
+$inStockGreen: green;
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* button */
+
+.go-check-btn {
+  padding: 7px 15px;
+  background: $headerButton;
+  border-radius: 5px;
+  font-weight: 700;
+  color: $buttonTextColor;
+}
+
+/* HEADER */
+
+.header {
+  @media (max-width: 423.98px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__header-wrapper {
+    height: 80px;
+    background-color: $headerBackground;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+
+    @media (max-width: 423.98px) {
+      width: inherit;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .user-info-col {
+      @media (max-width: 423.98px) {
+        order: 1;
+      }
+    }
+
+    .block {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: $textColor;
+
+        &:hover {
+          border-bottom: 2px solid #c7001f;
+        }
+      }
+
+      .car-list {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+
+        .nav-item {
+          height: 33px;
+        }
+      }
+
+      .user-info {
+        letter-spacing: 0;
+
+        .nav-item {
+          height: 41px;
+        }
+      }
+
+      button {
+        min-width: 143px;
+      }
+    }
+
+    .block3 {
+      @media (max-width: 1199.98px) {
+        justify-content: flex-end;
+      }
+
+      @media (max-width: 767.98px) {
+        justify-content: center;
+      }
+
+      .bar2 {
+        @media (max-width: 1199.98px) {
+          .nav-item {
+            display: none;
+
+            a:hover {
+              border-bottom: none;
+            }
+          }
+        }
+
+        .dropdown {
+          display: none;
+
+          @media (max-width: 1199.98px) {
+            display: block;
+          }
+
+          @media (max-width: 767.98px) {
+            .dropdown-toggle {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .block2 {
+      @media (max-width: 767.98px) {
+        display: none;
+      }
+
+      .bar1 {
+        @media (max-width: 991.98px) {
+          .nav-item {
+            display: none;
+
+            a:hover {
+              border-bottom: none;
+            }
+          }
+        }
+
+        .dropdown {
+          display: none;
+
+          @media (max-width: 991.98px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .social-links__wrapper {
+    display: none;
+
+    @media (min-width: 0px) and (max-width: 423.98px) {
+      display: block;
+
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* first-block */
+
+  .kia-info {
+    height: calc(100vh - 80px);
+    background-image: url("./img/mainImg/bg\ \(1\).png");
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1198.98px) {
+      background-size: 125% 110%;
+      background-position-x: center;
+    }
+
+    @media (max-width: 991.98px) {
+      background-size: 145% 110%;
+      background-position-x: center;
+    }
+
+    @media (max-width: 767.98px) {
+      background-size: 180% 110%;
+      background-position-x: center;
+    }
+
+    @media (max-width: 699.98px) {
+      background-size: 190% 110%;
+    }
+
+    @media (max-width: 500.98px) {
+      background-size: 210% 110%;
+    }
+
+    @media (max-width: 423.98px) {
+      background-size: 220% 110%;
+    }
+
+    .instalment {
+      width: 560px;
+      height: 320px;
+      background: rgba(51, 51, 51, 0.75);
+      border-radius: 0px 10px 10px 0px;
+      color: $headerBackground;
+      padding: 40px 60px;
+      border-left: 5px solid $headerButton;
+      margin-bottom: 100px;
+      margin-left: 120px;
+
+      @media (max-width: 1198.98px) {
+        width: 500px;
+        height: 290px;
+        margin-left: 80px;
+      }
+
+      @media (max-width: 991.98px) {
+        width: 450px;
+        height: 270px;
+        margin-left: 60px;
+      }
+
+      @media (max-width: 767.98px) {
+        margin-left: 40px;
+      }
+
+      @media (max-width: 699.98px) {
+        transform: rotate(90deg);
+        border-left: none;
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: 5px solid $headerButton;
+        margin-left: -50px;
+        display: flex;
+        width: 370px;
+      }
+
+      @media (max-width: 423.98px) {
+        margin-top: -30px;
+        width: 300px;
+        margin-left: 5px;
+      }
+
+      .card-body {
+        @media (max-width: 699.98px) {
+          transform: rotate(-90deg);
+          font-size: 20px;
+        }
+
+        @media (max-width: 423.98px) {
+          width: 200px;
+        }
+
+        p {
+          font-size: 43px;
+          line-height: 55px;
+          letter-spacing: 0.03em;
+
+          @media (max-width: 1198.98px) {
+            font-size: 34px;
+          }
+
+          @media (max-width: 991.98px) {
+            font-size: 29px;
+          }
+
+          @media (max-width: 699.98px) {
+            font-size: 22px;
+          }
+
+          @media (max-width: 423.98px) {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          padding: 13px 35px;
+        }
+      }
+    }
+
+    .social-links {
+      display: none;
+
+      @media (min-width: 424px) and (max-width: 2560px) {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 320px;
+        right: 90px;
+        z-index: 999;
+      }
+
+      @media (max-width: 1400.98px) {
+        right: 50px;
+      }
+
+      @media (max-width: 767.98px) {
+        right: 50px;
+      }
+
+      button {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  /* second-block */
+
+  /* title */
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+
+    @media (max-width: 468px) {
+      font-size: 30px;
+    }
+  }
+
+  .popular-models {
+    height: 100%;
+    width: 87%;
+
+    .title {
+      margin-top: 150px;
+      margin-bottom: 100px;
+    }
+
+    .carousel-indicators {
+      bottom: -60px;
+
+      button {
+        width: 100px;
+        height: 5px;
+        border-radius: 13px;
+      }
+
+      .line {
+        background-color: #d4d4d4;
+        width: 138%;
+        height: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: -1;
+        border-radius: 10px;
+      }
+    }
+
+    .car-card {
+      width: 96%;
+      padding: 40px 25px 50px 25px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      z-index: 2;
+
+      img {
+        height: 150px;
+        object-fit: contain;
+      }
+
+      .installment-new {
+        display: flex;
+        margin-bottom: 27px;
+
+        a {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16px;
+          color: $headerBackground;
+          text-decoration: none;
+        }
+
+        .new {
+          background-color: $textColor;
+          padding: 7px 15px;
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        .installment {
+          background-color: $headerButton;
+          padding: 7px 15px;
+          border-radius: 0px 5px 5px 0px;
+        }
+      }
+
+      .card-body {
+        .title-wrapper {
+          display: flex;
+
+          .card-title {
+            flex: 2;
+
+            h6 {
+              font-weight: 700;
+              font-size: 21px;
+              line-height: 24px;
+            }
+
+            span {
+              color: rgba(51, 51, 51, 0.85);
+            }
+          }
+
+          .in-stock-info {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            .stock-ball {
+              width: 10px;
+              height: 10px;
+              background-color: $inStockGreen;
+              border-radius: 2px;
+            }
+
+            span {
+              margin-left: 10px;
+              color: rgba(51, 51, 51, 0.85);
+            }
+          }
+        }
+
+        .car-data-wrapper {
+          .car-data {
+            margin-top: 20px;
+
+            img {
+              width: 22px;
+              height: 22px;
+              margin-right: 18px;
+            }
+
+            span {
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .button-wrapper {
+          margin-top: 30px;
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .go-check-btn {
+            background-color: $textColor;
+          }
+
+          .order-btn {
+            padding: 10px 5px;
+            background-color: $headerButton;
+          }
+
+          button {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+
+            @media (max-width: 468px) {
+              font-size: 12px;
+            }
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*  third-block  */
+
+  .mobile-app {
+    width: 87%;
+    padding: 100px 30px 0 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 500px) {
+      height: 100%;
+    }
+
+    .mobile-app__col1,
+    .mobile-app__col2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .mobile-app__col1 {
+        display: none;
+      }
+    }
+
+    .title {
+      margin-bottom: 60px;
+    }
+
+    .list-item {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+
+      .red-ball {
+        min-width: 10px;
+        min-height: 10px;
+        background: $headerButton;
+        border-radius: 2px;
+        margin-right: 35px;
+      }
+
+      &:nth-child(1n + 1) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /* fourth-block  */
+
+  .gallery {
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    color: $headerBackground;
+
+    .col1__img-wrapper,
+    .col2__img-wrapper,
+    .col3__img-wrapper {
+      position: relative;
+
+      @media (max-width: 1500px) {
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      .gallery-title {
+        position: absolute;
+        bottom: 10px;
+        left: 40px;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 140%;
+        max-width: 430px;
+        display: flex;
+
+        .gallery-title__text-wrapper {
+          width: inherit;
+
+          @media (max-width: 1500px) {
+            padding-right: 15px;
+          }
+        }
+
+        h2 {
+          padding-left: 23px;
+          border-left: 5px solid $headerButton;
+        }
+
+        p {
+          @media (max-width: 468px) {
+            display: none;
+          }
+        }
+      }
+
+      .gallery-title__body-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        max-width: 380px;
+        margin-top: 15px;
+      }
+
+      .gallery-title__arrow {
+        align-self: flex-end;
+        margin-bottom: 50px;
+
+        @media (max-width: 1500px) {
+          display: none;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .col2__img-wrapper,
+    .col3__img-wrapper {
+      h2 {
+        font-size: 21px;
+        line-height: 24px;
+        max-width: 275px;
+      }
+
+      .gallery-title__body-text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .col1__img-wrapper {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+
+  /* fifth-block */
+
+  .service {
+    margin-top: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 65px 130px;
+    background-color: $headerBackground;
+
+    @media (max-width: 500px) {
+      padding: 0 40px;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 35px;
+    }
+
+    h6 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 24px;
+      max-width: 290px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      max-width: 350px;
+    }
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  /* first-block */
+
+  .phone {
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+
+    .phone__col1,
+    .phone__col2,
+    .phone__col3 {
+      @media (max-width: 1400px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .phone__col2,
+    .phone__col3 {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    .block {
+      display: flex;
+      justify-content: center;
+
+      &:nth-child(1) {
+        justify-content: flex-start;
+      }
+    }
+
+    .hot-line {
+      p {
+        color: rgba(51, 51, 51, 0.75);
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 140%;
+      }
+
+      span {
+        color: $headerButton;
+      }
+    }
+  }
+
+  /* second-block */
+
+  .company-info {
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    padding: 0 0 0 150px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(51, 51, 51, 0.5);
+    background-color: $headerBackground;
+    height: 74px;
+
+    @media (max-width: 1600px) {
+      padding: 0 30px;
+    }
+
+    span {
+      cursor: pointer;
+
+      @media (max-width: 1400px) {
+        display: none;
+      }
+    }
+
+    span:nth-child(1n + 2) {
+      margin-left: 30px;
+    }
+
+    .footer-nav {
+      display: none;
+
+      @media (max-width: 1400px) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container-fluid">
+      <header class="header text-center">
+        <div
+          class="header__header-wrapper row col-10 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
+        >
+          <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+            <div class="block">
+              <img class="logo-img" src="./img/headerImg/logo.svg" alt="logo" />
+            </div>
+          </div>
+
+          <div class="col-1 col-sm-1 col-md-4 col-lg-5 col-xl-4 col-xxl-4">
+            <div class="block block2">
+              <nav class="bar1 navbar navbar-expand">
+                <ul class="car-list navbar-nav text-uppercase">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">sportage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">carnival</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">sorento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">exceed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">seltons</a>
+                  </li>
+
+                  <!-- dropdown list -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Лист-автомобилей KIA
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">sportage</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">carnival</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">sorento</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">exceed</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">seltons</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div
+            class="col-4 col-sm-6 col-md-3 col-lg-3 col-xl-4 col-xxl-4 user-info-col"
+          >
+            <div class="block block3">
+              <nav class="bar2 navbar navbar-expand">
+                <ul class="user-info navbar-nav text-capitalize">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">модели</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">дилеры</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">покупателям</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">мир Kia</a>
+                  </li>
+
+                  <!-- dropdown list -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Сервисы KIA
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">модели</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">дилеры</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">покупателям</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="#">мир Kia</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+            <div class="block">
+              <button type="button" class="go-check-btn btn">
+                тест - драйв
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- social-links -->
+        <div class="col-2 social-links__wrapper">
+          <div class="social-links block gap-3 d-flex flex-column">
+            <button type="button" class="go-check-btn btn">
+              <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button type="button" class="go-check-btn btn">
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+            <button type="button" class="go-check-btn btn">
+              <i class="fa-brands fa-youtube"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="container-fluid">
+      <main class="main row">
+        <!-- first-block -->
+
+        <div class="kia-info container">
+          <div class="col-xl-8 col-xxl-10">
+            <div class="block">
+              <div class="instalment card">
+                <div class="card-body text-uppercase">
+                  <p class="card-text">РАССРОЧКА 0% на кроссоверы kia</p>
+                  <button type="button" class="go-check-btn btn text-uppercase">
+                    подробнее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-xxl-2">
+            <div class="social-links block gap-3">
+              <button type="button" class="go-check-btn btn text-uppercase">
+                <i class="fa-brands fa-twitter"></i>
+              </button>
+              <button type="button" class="go-check-btn btn text-uppercase">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+              <button type="button" class="go-check-btn btn text-uppercase">
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- second-block -->
+
+        <div class="popular-models container row">
+          <div class="col-xxl-12">
+            <div class="block text-uppercase">
+              <h2 class="title">популярные модели</h2>
+            </div>
+          </div>
+
+          <!-- CAROUSEL -->
+
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+
+              <div class="line"></div>
+            </div>
+
+            <div class="carousel-inner">
+              <!-- first-slide -->
+              <div class="carousel-item active">
+                <div class="slide-wrapper d-flex">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/pngegg (2) 1.png"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/pngegg (2) 1 (1).png"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/pngegg (2) 1.png"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/pngegg (2) 1 (1).png"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second-slide -->
+              <div class="carousel-item">
+                <div class="slide-wrapper d-flex">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/kia_seltos_1.jpg"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/kia_sorento_1.jpg"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/kia_seltos_1.jpg"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <div class="block">
+                      <div class="car-card card">
+                        <div class="installment-new">
+                          <div class="new"><a href="#">NEW</a></div>
+                          <div class="installment">
+                            <a href="#">РАССРОЧКА 0%</a>
+                          </div>
+                        </div>
+
+                        <img
+                          class="card-img-top"
+                          src="./img/mainImg/kia_sorento_1.jpg"
+                          alt="car-card"
+                        />
+                        <div class="card-body">
+                          <div class="title-wrapper">
+                            <div class="card-title">
+                              <h6>Новый kia sportage</h6>
+                              <span>2022</span>
+                            </div>
+                            <div class="in-stock-info">
+                              <div class="stock-ball"></div>
+                              <span>В наличии</span>
+                            </div>
+                          </div>
+
+                          <div class="car-data-wrapper">
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-engine-phatplus-lineal-32.png"
+                                alt="car-info"
+                              />
+                              <span>2,0 л., 197 л.с., Бензин</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-рычаг-передач-32.png"
+                                alt="car-info"
+                              />
+                              <span>Роботизированная</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-эко-топливо-32.png"
+                                alt="car-info"
+                              />
+                              <span>8,5 л., смешанный</span>
+                            </div>
+                            <div class="car-data">
+                              <img
+                                src="./img/mainImg/icons8-автомобиль-2x6-32.png"
+                                alt="car-info"
+                              />
+                              <span>Полный привод</span>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper">
+                            <button
+                              type="button"
+                              class="order-btn go-check-btn btn text-uppercase"
+                            >
+                              Забронировать
+                            </button>
+                            <button
+                              type="button"
+                              class="go-check-btn btn text-uppercase"
+                            >
+                              подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CAROUSEL END -->
+            </div>
+          </div>
+        </div>
+
+        <!-- third-block -->
+
+        <div class="mobile-app container row">
+          <div class="mobile-app__col1 col-xl-12 col-xxl-6">
+            <div class="block">
+              <img src="./img/mainImg/Rectangle 10.png" alt="kia-app" />
+            </div>
+          </div>
+          <div class="mobile-app__col2 col-xl-12 col-xxl-6">
+            <div class="block">
+              <div class="col-xxl-11">
+                <div class="block text-uppercase">
+                  <h2 class="title">мобильное приложение my kia</h2>
+                </div>
+              </div>
+              <div class="col-xxl-10">
+                <div class="block">
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>
+                      Оформить предварительную запись на сервис к официальному
+                      дилеру;
+                    </span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>
+                      Отслеживать историю ТО и коммерческих ремонтов автомобиля;
+                    </span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>Проверить наличие сервисных мероприятий;</span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>
+                      Скачать руководство по эксплуатации автомобиля, сервисную
+                      книжку;
+                    </span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>Выполнить оценку качества ремонта CSI;</span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>
+                      Заказать оригинальные запасные части и аксессуары;
+                    </span>
+                  </div>
+                  <div class="list-item">
+                    <div class="red-ball"></div>
+                    <span>Задать вопрос дилеру.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth-block -->
+        <div class="gallery container row">
+          <div class="block row mx-0">
+            <div class="col1 col-lg-0 col-xl-4 col-xxl-4 px-0">
+              <div class="col1__img-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./img/mainImg/galleryImg/gallery-item1.png"
+                  alt="gallery-item1"
+                />
+                <div class="gallery-title">
+                  <div class="gallery-title__text-wrapper">
+                    <h2 class="gallery-title__title-text">
+                      Старт продаж нового кроссовера KIA Spotage.
+                    </h2>
+                    <p class="gallery-title__body-text">
+                      Дистрибьютор автомобилей CHERY в России информирует о
+                      начале продаж обновленной версии кроссовера.
+                    </p>
+                  </div>
+                  <div class="gallery-title__arrow">
+                    <img
+                      src="./img/mainImg/galleryImg/Arrow 1.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col2 col-md-6 col-lg-6 col-xl-4 col-xxl-4 px-0">
+              <div class="col2__img-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./img/mainImg/galleryImg/gallery-item2.png"
+                  alt=""
+                />
+                <div class="gallery-title">
+                  <div class="gallery-title__text-wrapper">
+                    <h2 class="gallery-title__title-text">
+                      KIA признан лучшим внедорожником
+                    </h2>
+                    <p class="gallery-title__body-text">
+                      Внедорожник концерна CHERY в списках лучших автомобилей по
+                      результатам исследования J.D. Power.
+                    </p>
+                  </div>
+                  <div class="gallery-title__arrow">
+                    <img
+                      src="./img/mainImg/galleryImg/Arrow 1.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col2__img-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./img/mainImg/galleryImg/gallery-item4.png"
+                  alt=""
+                />
+                <div class="gallery-title">
+                  <div class="gallery-title__text-wrapper">
+                    <h2 class="gallery-title__title-text">
+                      Забота о вашей любимой KIA
+                    </h2>
+                    <p class="gallery-title__body-text">
+                      Компания KIA заботится о своих клиентах, поэтому мы
+                      предлагаем вам стать участником летней акции «С заботой о
+                      Вашей KIA».
+                    </p>
+                  </div>
+                  <div class="gallery-title__arrow">
+                    <img
+                      src="./img/mainImg/galleryImg/Arrow 1.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col3 col-md-6 col-lg-6 col-xl-4 col-xxl-4 px-0">
+              <div class="col3__img-wrapper">
+                <img
+                  class="img-fluid px-0"
+                  src="./img/mainImg/galleryImg/gallery-item3.png"
+                  alt=""
+                />
+                <div class="gallery-title">
+                  <div class="gallery-title__text-wrapper">
+                    <h2 class="gallery-title__title-text">
+                      Кредит до 5 лет с остаточным платежем
+                    </h2>
+                    <p class="gallery-title__body-text">
+                      KIA совместно с ПАО «Совкомбанк» объявляют о финансовой
+                      программе Direct Balloon Promo.
+                    </p>
+                  </div>
+                  <div class="gallery-title__arrow">
+                    <img
+                      src="./img/mainImg/galleryImg/Arrow 1.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col3__img-wrapper">
+                <img
+                  class="img-fluid"
+                  src="./img/mainImg/galleryImg/gallery-item5.png"
+                  alt=""
+                />
+                <div class="gallery-title">
+                  <div class="gallery-title__text-wrapper">
+                    <h2 class="gallery-title__title-text">
+                      Выиграй туристический сертификат
+                    </h2>
+                    <p class="gallery-title__body-text">
+                      «Росбанк Авто» и KIA объявляют о совместной акции
+                      «Путешествуйте по России на KIA».
+                    </p>
+                  </div>
+                  <div class="gallery-title__arrow">
+                    <img
+                      src="./img/mainImg/galleryImg/Arrow 1.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fifth-block -->
+        <div class="service container row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="block">
+              <img
+                src="./img/mainImg/serviceImg/Drive eta.svg"
+                alt="service-img"
+              />
+              <h6>Записаться на тест драйв</h6>
+              <p>
+                Запишитесь на пробную поездку к ближайшему официальному диллеру
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="block">
+              <img
+                src="./img/mainImg/serviceImg/Account balance wallet.svg"
+                alt="service-img"
+              />
+              <h6>Купить онлайн</h6>
+              <p>
+                Выберите подходящий автомобиль KIA и забронируйте его онлайн
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="block">
+              <img
+                src="./img/mainImg/serviceImg/Calculate.svg"
+                alt="service-img"
+              />
+              <h6>Кредитный калькулятор</h6>
+              <p>Рассчитайте условия и получите одобрение кредита за 5 минут</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+            <div class="block">
+              <img
+                src="./img/mainImg/serviceImg/Control camera.svg"
+                alt="service-img"
+              />
+              <h6>Масла KIA OIL</h6>
+              <p>KIA рекомендует оригинальные моторные масла</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer row">
+        <!-- first-block -->
+        <div class="phone container row">
+          <div class="phone__col1 col-xxl-4">
+            <div class="block">
+              <div class="hot-line">
+                <p>Горячая линия KIA:</p>
+                <h3>8 800 <span> 555 55 35</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="phone__col2 col-xxl-4">
+            <div class="block">
+              <nav class="navbar navbar-expand">
+                <ul class="car-list navbar-nav text-uppercase">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">sportage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">carnival</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">sorento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">exceed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">seltons</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="phone__col3 col-xxl-4">
+            <div class="block">
+              <nav class="navbar navbar-expand">
+                <ul class="user-info navbar-nav text-capitalize">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">модели</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">дилеры</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">покупателям</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">мир Kia</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- second-block -->
+        <div class="company-info container row">
+          <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-4">
+            <div class="block d-flex justify-content-center">
+              <p>© 2022 ООО «Киа Россия и СНГ»</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-8 row">
+            <div class="block d-flex justify-content-center">
+              <span>Правовая информация</span>
+              <span>Контакты</span>
+              <span>Как стать диллером</span>
+              <span>Клиентская поддержка</span>
+
+              <ul class="footer-nav navbar-nav dropdown">
+                 <!-- dropdown list -->
+                 <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Информация KIA для клиентов
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <a class="nav-link" href="#">Правовая информация</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link" href="#">Как стать диллером</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link" href="#">Клиентская поддержка</a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://kit.fontawesome.com/0c580d3244.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
